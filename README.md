@@ -1,12 +1,12 @@
 # Path Algorithms Visualizer
 
-![](public/PAV-logo.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg)
 
 ## Overview
 
 Intuitive approach to path visualization algorithms using React!
 
-![](public/dijkstra.gif)
+![](https://i.gyazo.com/4ccb0e54cd62b6129f68a3f7d6255e1d.gif)
 
 ## Algorithms
 
@@ -22,8 +22,9 @@ For a given source node in the graph, the algorithm finds the shortest path betw
 
 ---
 
-<img src="public/edsger-w-dijkstra.jpeg" alt="alt text" height="150">
+
 **Edsger W Dijkstra**
+<img src="public/edsger-w-dijkstra.jpeg" alt="alt text" height="150">
 
 ## Usage
 
