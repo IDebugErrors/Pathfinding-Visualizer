@@ -12,7 +12,7 @@ Intuitive approach to path visualization algorithms using React!
 
 ### 1 - Dijkstra's Algorithm
 
-![](public/Dijkstra_Animation.gif)
+![](https://i.pinimg.com/originals/b5/ca/ec/b5caec6a88a01145776c89027f9a1514.jpg)
 
 Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.
 
