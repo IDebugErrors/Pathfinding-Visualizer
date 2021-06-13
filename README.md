@@ -1,51 +1,29 @@
-# Path Algorithms Visualizer
+# Pathfinding Visualizer
 
-![](http://www.danielledeveloper.com/wp-content/uploads/2018/04/Reactjs-logo-e1523253944211.png)
+Welcome to Pathfinding Visualizer! I built this application because I was fascinated by pathfinding algorithms, and I wanted to visualize them in action. I hope that you enjoy playing around with this visualization tool just as much as I enjoyed building it. You can access it here (use Google Chrome!): https://clementmihailescu.github.io/Pathfinding-Visualizer/
 
-## Overview
+## Meet the Algorithms
 
-Intuitive approach to path visualization algorithms using React!
+This application supports the following algorithms: 
 
-![](https://i.gyazo.com/4ccb0e54cd62b6129f68a3f7d6255e1d.gif)
+**Dijkstra's Algorithm** (weighted): the father of pathfinding algorithms; guarantees the shortest path
 
-## Algorithms
+**A* Search** (weighted): arguably the best pathfinding algorithm; uses heuristics to guarantee the shortest path much faster than Dijkstra's Algorithm
 
-### 1 - Dijkstra's Algorithm
+**Greedy Best-first Search** (weighted): a faster, more heuristic-heavy version of A*; does not guarantee the shortest path
 
-![](https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg)
+**Swarm Algorithm** (weighted): a mixture of Dijkstra's Algorithm and A*; does not guarantee the shortest-path
 
-Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.
+**Convergent Swarm Algorithm** (weighted): the faster, more heuristic-heavy version of Swarm; does not guarantee the shortest path
 
-The algorithm exists in many variants. Dijkstra's original algorithm found the shortest path between two given nodes,[4] but a more common variant fixes a single node as the "source" node and finds shortest paths from the source to all other nodes in the graph, producing a shortest-path tree.
+**Bidirectional Swarm Algorithm** (weighted): Swarm from both sides; does not guarantee the shortest path
 
-For a given source node in the graph, the algorithm finds the shortest path between that node and every other. It can also be used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined. For example, if the nodes of the graph represent cities and edge path costs represent driving distances between pairs of cities connected by a direct road (for simplicity, ignore red lights, stop signs, toll roads and other obstructions), Dijkstra's algorithm can be used to find the shortest route between one city and all other cities.
+**Breath-first Search** (unweighted): a great algorithm; guarantees the shortest path
 
----
+**Depth-first Search** (unweighted): a very bad algorithm for pathfinding; does not guarantee the shortest path
 
+On top of the pathfinding algorithms listed above, I implemented a **Recursive Division** Maze Generation algorithm.
 
-**Edsger W Dijkstra**
-<img src="https://i.pinimg.com/originals/b5/ca/ec/b5caec6a88a01145776c89027f9a1514.jpg" alt="" height="150">
+## More about the Swarm Algorithm
 
-## Usage
-
-git clone the project and type `npm start` in the terminal.
-
-Website available soon.
-
-## ToDO
-
-- ~~Add Dijkstra's Algorithm~~
-- Add DFS
-- Add BFS
-- Add A\* Search
-- Improve User Interface
-- Launch website
-- ...
-
-## Author
-
-Jay Patel ,FranckNdame. 
-
-## Contributing
-
-Forks, patches and other feedback are welcome.
+The Swarm Algorithm is an algorithm that I - at least presumably so (I was unable to find anything close to it online) - co-developed with a good friend and colleague, Hussein Farah. The algorithm is essentially a mixture of Dijkstra's Algorithm and A* Search; more precisely, while it converges to the target node like A* , it still explores quite a few neighboring nodes surrounding the start node like Dijkstra's. The algorithm differentiates itself from A* through its use of heuristics: it continually updates nodes' distance from the start node while taking into account their estimated distance from the target node. This effectively "balances" the difference in total distance between nodes closer to the start node and nodes closer to the target node, which results in the triangle-like shape of the Swarm Algorithm. We named the algorithm "Swarm" because one of its potential applications could be seen in a video-game where a character must keep track of a boss with high priority (the target node), all the while keeping tracking of neighboring enemies that might be swarming nearby. 
