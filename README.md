@@ -4,7 +4,7 @@
 
 ## Overview
 
-Intuitive approach to path visualization algorithms using React!
+Intuitive approach to path visualization algorithms using react framework. I am also developing a python visualizer for the same . (Under Development) 
 
 ![](https://www.101computing.net/wp/wp-content/uploads/Dijkstra-Algorithm.png)
 
@@ -43,4 +43,4 @@ Website available soon.
 
 ## Author
 
-Jay Patel , FranckNdame . 
+Jay Patel. 
