@@ -6,7 +6,7 @@
 
 Intuitive approach to path visualization algorithms using React!
 
-![](public/dijkstra.gif)
+![](https://www.101computing.net/wp/wp-content/uploads/Dijkstra-Algorithm.png)
 
 ## Algorithms
 
@@ -22,7 +22,7 @@ For a given source node in the graph, the algorithm finds the shortest path betw
 
 ---
 
-<img src="public/edsger-w-dijkstra.jpeg" alt="alt text" height="150">
+<img src="http://kazimirmajorinc.com/Documents/Why-Dijkstra-didnt-like-Lisp/Dijkstra.jpg" alt="alt text" height="150">
 **Edsger W Dijkstra**
 
 ## Usage
